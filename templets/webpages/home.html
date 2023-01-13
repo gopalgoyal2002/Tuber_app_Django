@@ -1,0 +1,9 @@
+{% extends 'index.html' %} 
+
+{% block body %}
+<h1>Home Page</h1>
+{% for slide in slider %}
+<img src="{{slide.photo.url}}" alt="mess_photo" class="img-fluid w-100">
+<p>{{slide.headline}}</p>
+{% endfor %}
+{% endblock %}
